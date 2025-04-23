@@ -1,2 +1,10 @@
 pyenv
 D:\Cranes Training\Ai_DS\Project\Social Media Emotion Dataset.csv
+__pycache__/
+*.pyc
+*.pkl
+*.h5
+.env
+.vscode/
+.DS_Store
+nltk_data/
