@@ -15,9 +15,9 @@ stop_words = set(stopwords.words('english'))
 
 # Load pre-trained components
 try:
-    tfidf = joblib.load("model/tfidf_vectorizer.pkl")
-    le = joblib.load("model/label_encoder.pkl")
-    model = tf.keras.models.load_model("model/sentiment_model.h5")
+    tfidf = joblib.load("reddit_sentiment_app/model/tfidf_vectorizer.pkl")
+    le = joblib.load("reddit_sentiment_app/model/label_encoder.pkl")
+    model = tf.keras.models.load_model("reddit_sentiment_app/model/sentiment_model.h5")
 except Exception as e:
     st.error(f"❌ Failed to load model components. Check file paths.\n\n**Error:** {e}")
     st.stop()
